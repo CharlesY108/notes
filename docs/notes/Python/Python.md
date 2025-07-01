@@ -611,6 +611,25 @@ print(c if c > d else d)
 # 40
 ```
 
+### match 语法
+
+Python 3.10 引入了 `match` 语句，与 JavaScript 的 `switch` 类似
+
+```python
+def get_discount(level):
+    match level:
+        case 'VIP':
+            return 0.8
+        case 'Gold':
+            return 0.9
+        case 'Silver':
+            return 0.95
+        case _:  # 默认情况
+            return 1.0
+```
+
+
+
 ## 流程控制 while
 
 ### while 语法
